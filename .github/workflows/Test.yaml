@@ -1,0 +1,12 @@
+name : Generate SBOM
+on:
+    workflow_run:
+      workflows: ["Build Binary"]
+      types: completed
+      
+          
+jobs:
+    build: 
+        name: Generate SBOM
+        runs-on: ubuntu-latest
+        

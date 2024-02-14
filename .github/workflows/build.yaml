@@ -1,0 +1,13 @@
+name : Build Binary
+on:
+    push:
+      
+jobs:
+    build: 
+        name: upload-binary
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: build-binary
+              run: |
+               echo "Hello world"
